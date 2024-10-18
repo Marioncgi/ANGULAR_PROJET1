@@ -1,0 +1,11 @@
+<div class="face-snap-card">
+<h2>{{title}}</h2>
+<img [src]="imageUrl"[alt] ="title"> <!-- on met [] pour permettre d'indiquer des propriétés/variables. On appelle ça "attribute binding" 
+alt = alternative-->
+<p>{{description}}</p> 
+<p>FaceSnap créé le {{createdDate}} </p>
+<p><!-- on utilise les () pour écouter un évènement sur la page utilisateur -->
+    <button (click)="onSnap()">{{snapButtonText}} </button>
+    {{snaps}} likes
+</p>
+</div>
